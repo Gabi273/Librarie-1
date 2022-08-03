@@ -44,6 +44,11 @@ body{
     /* HERO */
     .photo-text-hero{
         display: flex;
+        
+    }
+
+    .photo-hero{
+        width: 63%;
     }
 
     .text-hero{
@@ -77,21 +82,39 @@ body{
     .header-color{
         background-image: url("/imagini/image\ 31.png");
         background-position: center;
-        background-size: cover;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
-        width: 100%;
     }
 
     .hero-text-span{
         font-weight: bold;
     }
 
-    .hero-link{
-        color: #3861E9;
-        background-color: #fff;
-        padding: 15px;
-        border-radius: 5px;
+    .apple {
+        font-size: 25px;
     }
+
+    .hero-link-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        color: #3861E9;
+        width: 231px;
+        height: 50px;
+        border-radius: 7px;
+        gap: 20px;
+        cursor: pointer;
+    }
+
+    .hero-link-container,.hero-link, .apple{
+        color: #3861E9;
+    }
+
+    .container-link{
+        margin-top: -20px;
+    }
+    
 
     /*MAIN*/
 
@@ -123,10 +146,13 @@ body{
         background-color: #DFE7F5;
         max-width: 982px;
         width: 90%;
-        height: 346px;
+        height: 553px;
         margin: 150px auto;
         border: #3861E9 5px solid;
         border-radius: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     /*DE CE*/
@@ -277,15 +303,26 @@ body{
         color: #8890A6;
     }
 
-    .owl-nav {
-        display: flex;
-        max-width: 1200px;
-        justify-content: space-between;
-        align-content: space-between;
+    .owl-theme .owl-nav {
         position: absolute;
         z-index: 666;
         top: 48%;
     }
+
+    .owl-theme .owl-nav .owl-next{
+        position: absolute;
+        left: 100%;
+        right: 0;
+    }
+
+    .owl-theme .owl-nav .owl-next{
+        position: absolute;
+        left: 100%;
+        right: 100%;
+
+    }
+
+
 
     .owl-theme .owl-nav [class*="owl-"]:hover{
         background-color: transparent;
@@ -491,6 +528,7 @@ body{
     .img-3-ig:hover,.img-4-yt:hover,.img-2-tw:hover,.img-1-fb:hover{
         background-color: #3861E9;
     }
+    
 
 
     /*CONCURSURI*/
@@ -1027,6 +1065,8 @@ body{
         text-align: center;
     }
 
+    
+
 }
  
 
@@ -1106,6 +1146,7 @@ header{
     height: 700px;
     background-repeat: no-repeat;
     width: 100%;
+    background-size: cover;
 }
 
 .photo-text-hero{
@@ -1116,6 +1157,10 @@ header{
 .text-hero{
     gap: 25px;
     margin-top: -10px;
+}
+
+.photo-hero{
+    width: 100%;
 }
 
 
@@ -1370,6 +1415,10 @@ header{
     padding-top: 50px;
 }
 
+.header-color{
+    background-size: cover;
+}
+
 .photo-text-hero{
     flex-direction: column;
     gap: 30px;
@@ -1384,6 +1433,10 @@ header{
 .text-hero{
     gap: 25px;
     margin-top: -30px;
+}
+
+.photo-hero{
+    width: 100%;
 }
 
 
