@@ -306,30 +306,25 @@ body{
     .owl-theme .owl-nav {
         position: absolute;
         z-index: 666;
-        top: 48%;
+        top: 40%;
     }
 
     .owl-theme .owl-nav .owl-next{
         position: absolute;
-        left: 100%;
-        right: 0;
+        left: 1190px;
     }
 
-    .owl-theme .owl-nav .owl-next{
+    .owl-theme .owl-nav .owl-prev{
         position: absolute;
-        left: 100%;
-        right: 100%;
-
+        right: 10px;
     }
-
-
 
     .owl-theme .owl-nav [class*="owl-"]:hover{
         background-color: transparent;
     }
 
     .owl-nav button span{
-        font-size: 35px;
+        font-size: 50px;
         color: #8890A6;
     }
 
@@ -523,6 +518,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
 
     .img-3-ig:hover,.img-4-yt:hover,.img-2-tw:hover,.img-1-fb:hover{
@@ -828,14 +824,15 @@ body{
     
     }
 
-    
+    @media(max-width: 1300px){
+        .owl-theme .owl-nav{
+            display: none;
+        }
+    }
 
 /*CONCURSURI*/
 
 @media(max-width: 1100px){
-
-    
-
 
     .navbar-color-1{
         background-color: #fff;
@@ -1040,7 +1037,7 @@ body{
         max-width: 151px;
     }
 
-
+    
 
 }
 
